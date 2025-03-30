@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { View, FlatList, Text, Alert, ActivityIndicator } from 'react-native';
-import { SavedJobsContext } from '../context/SavedJobsContext';  // Import the context
+import { SavedJobsContext } from '../context/SavedJobsContext';  
 import { Job } from '../types/types';
-import SearchBar from '../components/SearchBar';  // Import SearchBar
-import JobCard from '../components/JobCard';  // Import JobCard
+import SearchBar from '../components/SearchBar';  
+import JobCard from '../components/JobCard'; 
 import styles from '../styles/style';
-import Icon from 'react-native-vector-icons/Ionicons'; // Import Ionicons for the icon
+import Icon from 'react-native-vector-icons/Ionicons'; 
 
 const JobFinderScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
-  const { savedJobs, setSavedJobs } = useContext(SavedJobsContext); // Access context values
+  const { savedJobs, setSavedJobs } = useContext(SavedJobsContext); 
 
   const [jobs, setJobs] = useState<Job[]>([]);
   const [filteredJobs, setFilteredJobs] = useState<Job[]>([]);
@@ -66,7 +66,7 @@ const JobFinderScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
       ) : (
         <>
           <View style={styles.searchBarAndIconsContainer}>
-            <SearchBar query={searchQuery} onChange={handleSearch} darkMode={darkMode} /> {/* Pass darkMode here */}
+            <SearchBar query={searchQuery} onChange={handleSearch} darkMode={darkMode} />
 
             <View style={styles.iconsContainer}>
               <Icon

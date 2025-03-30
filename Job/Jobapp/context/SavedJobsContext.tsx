@@ -6,7 +6,6 @@ interface SavedJobsContextType {
   setSavedJobs: React.Dispatch<React.SetStateAction<Job[]>>;
 }
 
-// Create the context
 export const SavedJobsContext = createContext<SavedJobsContextType | undefined>(undefined);
 
 interface SavedJobsProviderProps {

@@ -1,6 +1,5 @@
-// App.tsx
 import React, { useState } from 'react';
-import AppNavigator from './navigation/AppNavigator'; // Adjust path as necessary
+import AppNavigator from './navigation/AppNavigator';
 import { Job } from './types/types';
 
 const App = () => {
@@ -16,7 +15,7 @@ const App = () => {
       savedJobs={savedJobs}
       setSavedJobs={setSavedJobs}
       darkMode={darkMode}
-      toggleDarkMode={toggleDarkMode} // Pass the toggle function here
+      toggleDarkMode={toggleDarkMode} 
     />
   );
 };

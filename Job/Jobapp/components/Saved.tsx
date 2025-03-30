@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { View, FlatList, Text, TouchableOpacity } from 'react-native';
-import { SavedJobsContext } from '../context/SavedJobsContext';  // Import the context
+import { SavedJobsContext } from '../context/SavedJobsContext'; 
 import { Job } from '../types/types';
 import styles from '../styles/style';
 
 const SavedJobsScreen: React.FC = ({ navigation }) => {
-  const { savedJobs, setSavedJobs } = useContext(SavedJobsContext); // Access savedJobs from context
+  const { savedJobs, setSavedJobs } = useContext(SavedJobsContext);
 
   const removeJob = (jobId: string) => {
     setSavedJobs(savedJobs.filter(job => job.id !== jobId));
@@ -22,18 +22,17 @@ const SavedJobsScreen: React.FC = ({ navigation }) => {
             <View style={styles.jobCard}>
               <Text style={styles.jobTitle}>{item.title}</Text>
               <Text style={styles.jobCompany}>{item.companyName}</Text>
-              {/* Button Container */}
+
               <View style={styles.buttonContainer}>
-                {/* Apply button */}
                 <TouchableOpacity
-                  style={styles.button}  // Use consistent button styling
+                  style={styles.button}
                   onPress={() => navigation.navigate('ApplicationForm', { job: item })}
                 >
                   <Text style={styles.buttonText}>Apply Now</Text>
                 </TouchableOpacity>
-                {/* Remove Job button */}
+                
                 <TouchableOpacity
-                  style={styles.removeButton}  // Use consistent remove button styling
+                  style={styles.removeButton}  
                   onPress={() => removeJob(item.id)}
                 >
                   <Text style={styles.buttonText}>Remove Job</Text>

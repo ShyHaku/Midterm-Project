@@ -1,5 +1,3 @@
-// AppNavigator.tsx
-
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -27,7 +25,6 @@ const AppNavigator: React.FC<AppNavigatorProps> = ({
     <SavedJobsProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="JobFinder">
-          {/* Pass darkMode and toggleDarkMode to screens */}
           <Stack.Screen name="JobFinder">
             {(props) => (
               <Jobs

@@ -1,14 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  // Main screen container for Job Finder
   jobFinderScreenContainer: {
     flex: 1,
     backgroundColor: '#fff',
     padding: 20,
   },
 
-  // Dark Mode Styles
   darkMode: {
     backgroundColor: '#333',
   },
@@ -16,54 +14,47 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 
-  // Search Bar and Icons container
   searchBarAndIconsContainer: {
     flexDirection: 'row',
-    alignItems: 'center', // Aligns items vertically centered
+    alignItems: 'center',
     width: '100%',
-    justifyContent: 'space-between',  // Spaces the search bar and icons equally
+    justifyContent: 'space-between',
     marginBottom: 10,
   },
 
-  // Search Bar Styles
   jobFinderScreenSearchBar: {
     height: 40,
-    width: '80%', // Adjust to give space for the icons
+    width: '80%',
     marginVertical: 10,
     paddingLeft: 10,
     fontSize: 16,
     borderWidth: 1,
-    borderColor: '#C1A56D',  // Earthy border color for search bar
+    borderColor: '#C1A56D',
     borderRadius: 8,
   },
 
-  // Dark Mode TextInput Style
   darkModeTextInput: {
-    color: '#fff', // White text color for dark mode
-    backgroundColor: '#333', // Dark background color for input field
+    color: '#fff',
+    backgroundColor: '#333',
   },
 
-  // Icons container and styling (beside the search bar)
   iconsContainer: {
-    flexDirection: 'row',  // Align icons horizontally
-    justifyContent: 'flex-end', // Position icons to the right side
-    alignItems: 'center', // Center icons vertically
-    width: '20%', // Reserve space for the icons
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    width: '20%',
   },
 
-  // Icon styles
   icon: {
     marginLeft: 10,
   },
 
-  // Button Container (Buttons side by side)
   buttonContainer: {
-    flexDirection: 'row',  // Align buttons side by side
-    justifyContent: 'space-between',  // Space buttons equally
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     marginTop: 10,
   },
 
-  // Button Styling (Apply Now)
   button: {
     flex: 1,
     marginHorizontal: 5,
@@ -71,7 +62,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#4CAF50', // Green color for Apply Now buttons
+    backgroundColor: '#4CAF50',
   },
   buttonText: {
     color: 'white',
@@ -79,9 +70,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
-  // Job Card Styles for SavedJobsScreen
   jobCard: {
-    backgroundColor: '#D4C8A8',  // Light beige background for job cards
+    backgroundColor: '#D4C8A8',
     borderRadius: 12,
     padding: 20,
     marginBottom: 15,
@@ -91,41 +81,38 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 5,
     borderWidth: 1,
-    borderColor: '#C1A56D',  // Warm earthy border color
+    borderColor: '#C1A56D',
   },
   jobTitle: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#5A4E3D',  // Earthy brown color for title text
+    color: '#5A4E3D',
     marginBottom: 8,
   },
   jobCompany: {
     fontSize: 16,
-    color: '#6B4F31',  // Slightly darker brown for company names
+    color: '#6B4F31',
     marginBottom: 6,
   },
 
-  // Remove Job Button with Earth Tone Style
   removeButton: {
-    backgroundColor: '#F44336',  // Earthy red color for Remove button
+    backgroundColor: '#F44336',
     padding: 12,
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
   },
 
-  // No Jobs Text Styling
   jobFinderScreenNoJobsText: {
     textAlign: 'center',
     fontSize: 18,
     color: '#5A4E3D',
   },
 
-  // Application Form Screen Styles
   applicationFormScreenContainer: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#fff', // Default background color
+    backgroundColor: '#fff',
   },
 
   applicationFormInput: {
@@ -135,26 +122,24 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     fontSize: 16,
     marginBottom: 15,
-    borderColor: '#C1A56D', // Earthy border color for inputs
+    borderColor: '#C1A56D',
   },
 
   applicationFormButton: {
     marginTop: 20,
-    backgroundColor: '#4CAF50',  // Green button background
+    backgroundColor: '#4CAF50',
     borderRadius: 8,
     padding: 12,
     justifyContent: 'center',
     alignItems: 'center',
   },
 
-  // Button text
   applicationFormButtonText: {
-    color: 'white', // White text color
+    color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
   },
 
-  // Dark Mode Styles for Application Form
   darkApplicationFormInput: {
     borderColor: '#fff',
     color: '#fff',
@@ -165,7 +150,7 @@ const styles = StyleSheet.create({
   },
 
   darkApplicationFormButtonText: {
-    color: '#fff', // White text in dark mode for the button
+    color: '#fff',
   },
 });
 

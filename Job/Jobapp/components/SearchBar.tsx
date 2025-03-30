@@ -1,11 +1,11 @@
 import React from 'react';
 import { TextInput } from 'react-native';
-import styles from '../styles/style'; // Import styles
+import styles from '../styles/style';
 
 interface SearchBarProps {
   query: string;
   onChange: (text: string) => void;
-  darkMode: boolean; // Pass darkMode state as a prop to control text color
+  darkMode: boolean; 
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ query, onChange, darkMode }) => {
@@ -13,7 +13,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ query, onChange, darkMode }) => {
     <TextInput
       style={darkMode ? [styles.jobFinderScreenSearchBar, styles.darkModeTextInput] : styles.jobFinderScreenSearchBar}
       placeholder="Search jobs..."
-      placeholderTextColor={darkMode ? 'white' : 'black'} // Lighter placeholder text in dark mode
+      placeholderTextColor={darkMode ? 'white' : 'black'} 
       value={query}
       onChangeText={onChange}
     />

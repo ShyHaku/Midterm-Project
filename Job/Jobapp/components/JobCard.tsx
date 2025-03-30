@@ -14,8 +14,8 @@ const JobCard: React.FC<JobCardProps> = ({ job, onSave, onApply }) => {
 
   const handleSaveJob = () => {
     if (!isSaved) {
-      setIsSaved(true); // Change button text to "Saved"
-      onSave(); // Call the saveJob function passed from parent
+      setIsSaved(true);
+      onSave(); 
     }
   };
 
@@ -27,7 +27,7 @@ const JobCard: React.FC<JobCardProps> = ({ job, onSave, onApply }) => {
 
       <View style={styles.buttonContainer}>
         <TouchableOpacity
-          style={[styles.button, { backgroundColor: isSaved ? '#8B4513' : '#6B8E23' }]} // Change color based on saved state
+          style={[styles.button, { backgroundColor: isSaved ? '#8B4513' : '#6B8E23' }]}
           onPress={handleSaveJob}
         >
           <Text style={styles.buttonText}>{isSaved ? 'Saved' : 'Save Job'}</Text>

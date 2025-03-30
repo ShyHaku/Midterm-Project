@@ -22,7 +22,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ route, navigation, da
     }
 
    Alert.alert('Application Submitted', 'Thank you for applying!', [
-    { text: 'Okay', onPress: () => navigation.reset({ index: 0, routes: [{ name: 'JobFinder' }] }) } // Replaces the current screen
+    { text: 'Okay', onPress: () => navigation.reset({ index: 0, routes: [{ name: 'JobFinder' }] }) }
   ]);
   
 
@@ -63,7 +63,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ route, navigation, da
         onChangeText={setReason}
       />
       
-      {/* Custom Submit Button */}
+  
       <TouchableOpacity
         style={[styles.applicationFormButton, darkMode && { backgroundColor: '#555' }]}
         onPress={handleSubmit}
